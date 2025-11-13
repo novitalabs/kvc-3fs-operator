@@ -35,7 +35,7 @@ function create_cluster_file() {
             echo "Failed to look up coordinator address for $FDB_COORDINATOR" 1>&2
             exit 1
         fi
-        coordinator_port=${FDB_COORDINATOR_PORT:-4500}
+        coordinator_port=${FDB_COORDINATOR_PORT:-5500}
         echo "docker:docker@$coordinator_ip:$coordinator_port" > "$FDB_CLUSTER_FILE"
     else
         echo "FDB_COORDINATOR environment variable not defined" 1>&2

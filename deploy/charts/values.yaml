@@ -24,7 +24,7 @@ mgmtd:
   image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
 
 fdb:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/fdb:20250504
+  image: image.paigpu.com/library/3fs-fdb:1111
 
 meta:
   image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
