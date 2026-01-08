@@ -1,12 +1,12 @@
 imageInfo:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/vfsc-operator:filter-0828
-  tfsctImage: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/vfsct-operator:filter-0828
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/vfsc-operator:filter-0828
+  tfsctImage: ppio-harbor-registry.tencentcloudcr.com/vcns/vfsct-operator:filter-0828
   imagePullPolicy: Always
   mutatingObjectLabelKey: threefs.aliyun.com/sidecar
   mutatingObjectLabelValue: threefs
   webhookSecretName: threefs-webhook-secret
   enableWebhook: true
-  webhookGenerateKeyImage: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/generate-keys:0725
+  webhookGenerateKeyImage: ppio-harbor-registry.tencentcloudcr.com/vcns/generate-keys:0725
   mutatePath: /mutate--v1-pod
   validatePath: /validate-threefs-aliyun-com-v1-threefscluster
   validatePath2: /validate-threefs-aliyun-com-v1-threefschaintable
@@ -15,22 +15,22 @@ imageInfo:
   enableTrace: false
 
 clickhouse:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/clickhouse:25.1-jammy-20250411
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/clickhouse:25.1-jammy-20250411
 
 monitor:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/3fs:0828-multi-device-op1
 
 mgmtd:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/3fs:0828-multi-device-op1
 
 fdb:
-  image: image.paigpu.com/library/3fs-fdb:1111
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/fdb:20250504
 
 meta:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/3fs:0828-multi-device-op1
 
 storage:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/3fs:0828-multi-device-op1
 
 fuse:
-  image: vcns-registry.cn-hangzhou.cr.aliyuncs.com/vcns/3fs:0828-multi-device-op1
+  image: ppio-harbor-registry.tencentcloudcr.com/vcns/3fs:0828-multi-device-op1
